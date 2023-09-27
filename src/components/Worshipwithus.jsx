@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import congregation from "../assets/img/congration2.jpg"
+import time from "../assets/img/time.png"
+import location from "../assets/img/location.png"
 import worship from "../assets/img/worship.jpg"
 import TrackVisibility from 'react-on-screen';
 import { HashLink } from 'react-router-hash-link';
@@ -33,12 +35,15 @@ export const Worshipwithus = () => {
                                     <br/>
                                 <br/>
                                     <div className="contactcard">
-                                        {/* <img src={} alt="Contact Us" /> */}
-                                        <h1>8:00AM</h1>
+                                        <img src={time} alt="Contact Us" />
+                                        <br/>
+
+                                        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8:00AM</h1>
                                         <div className="green"></div>
                                     </div>
                                     <div className="contactcard">
-                                        {/* <img src={pso} alt="Contact Us" /> */}
+                                        <img src={location} alt="Contact Us" />
+                                        <br/>
                                         <h1>No 7, Raimi omole street</h1>
                                         <div className="green"></div>
                                     </div>

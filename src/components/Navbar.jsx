@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Col, Button } from "react-bootstrap";
 import facebook from '../assets/img/facebook.svg';
 import x from '../assets/img/x.svg';
+import send from '../assets/img/send.png'
 import logo from '../assets/img/Ghcc logo.png';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
@@ -61,9 +62,7 @@ export const NavBar = () => {
                 <a href=""><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-              <button >
-        Contact
-      </button>
+              <button >Contact &nbsp; <img className="send" src={send} alt="" /> </button>
               </HashLink>
             </span>
           </Navbar.Collapse>
