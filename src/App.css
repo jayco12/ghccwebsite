@@ -490,6 +490,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   width: 180px;
+  text-decoration: none;
   height: 65px;
   display: inline-flex;
   margin-right: 80px;
@@ -516,7 +517,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .contactcard img {
-  height: 100px;
+  height: 80px;
   width: 90px;
   align-items: center;
   justify-content: center;
@@ -528,10 +529,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contactcard h1 {
   font-size: 20px;
-  font-weight: 800px;
+  font-weight: 700px;
   display: block;
   color: #050505;
   padding-left: 50px;
+
+}
+.contactcard h2 {
+  font-size: 15px;
+  font-weight: 700px;
+  display: block;
+  color: #050505;
+  padding-left: 47px;
 
 }
 

@@ -24,12 +24,13 @@ export const Worshipwithus = () => {
                                   "animate__animated animate__fadeIn" 
                                   : ""
                                   }>
-                                    <h2>Worship With Us</h2>
+                                    <h1>Worship With Us</h1>
                                     <br/>
                                 
                                     <p>We would love for you to worship with us.</p>
 
                                     <p>Our services hold every Sunday by 8AM </p>
+                                    <p>Find the closest centre to you </p>
                                     <br/>
                                 <br/>
                                     <div className="contactcard">
@@ -42,7 +43,29 @@ export const Worshipwithus = () => {
                                     <div className="contactcard">
                                         <img src={location} alt="Contact Us" />
                                         <br/>
-                                        <h1>No 7, Raimi omole street</h1>
+                                        <h1>Ilesa Center</h1>
+                                        <h2>GHCC, No 7, Raimi omole street. Ilesa.Osun State. Nigeria</h2>
+                                        <div className="green"></div>
+                                    </div>
+                                    <div className="contactcard">
+                                        <img src={location} alt="Contact Us" />
+                                        <br/>
+                                        <h1>Ife Center</h1>
+                                        <h2>Banquet Hall, Mayfair Hotel, Mayfair. ILE-IFE.Osun State. Nigeria</h2>
+                                        <div className="green"></div>
+                                    </div>
+                                    <div className="contactcard">
+                                        <img src={location} alt="Contact Us" />
+                                        <br/>
+                                        <h1>Osogbo Center</h1>
+                                        <h2>Nuj secretariat, Beside Technical College.Osogbo .Osun State. Nigeria</h2>
+                                        <div className="green"></div>
+                                    </div>
+                                    <div className="contactcard">
+                                        <img src={location} alt="Contact Us" />
+                                        <br/>
+                                        <h1>Lagos Center</h1>
+                                        <h2>Fullfilment Assembly. 3, Toyin Street, Ikeja .Lagos State. Nigeria</h2>
                                         <div className="green"></div>
                                     </div>
 
