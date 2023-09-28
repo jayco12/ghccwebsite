@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
-import congregation from "../assets/img/congregation.jpg"
 import { HashLink } from 'react-router-hash-link';
 import TrackVisibility from 'react-on-screen';
 import {

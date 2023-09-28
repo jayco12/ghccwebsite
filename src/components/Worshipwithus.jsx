@@ -1,12 +1,10 @@
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import congregation from "../assets/img/congration2.jpg"
-import time from "../assets/img/time.png"
-import location from "../assets/img/location.png"
+import time from "../assets/img/time.svg"
+import location from "../assets/img/location.svg"
 import worship from "../assets/img/worship.jpg"
 import TrackVisibility from 'react-on-screen';
-import { HashLink } from 'react-router-hash-link';
 import {
     BrowserRouter as Router
   } from "react-router-dom";
@@ -61,8 +59,8 @@ export const Worshipwithus = () => {
                                         "animate__animated animate__fadeIn"
                                         : ""
                                 }>
-                                     <img src={worship} />
-                                    <img src={congregation} />
+                                     <img src={worship} alt="" />
+                                    <img src={congregation} alt=""/>
                                 </div>
                                
 

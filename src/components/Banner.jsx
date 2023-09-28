@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header.jpg";
 // import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import { HashLink } from 'react-router-hash-link';
@@ -16,7 +15,6 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = ["Helping men find fulfilment in life through Christ", "  Reaching, Raising, equipping men in their walk with God and work for God"];
   const period = 500;
-  const [activeLink, setActiveLink] = useState('home');
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -49,9 +47,7 @@ export const Banner = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  }
+
 
   return (
     <Router>
@@ -67,13 +63,13 @@ export const Banner = () => {
                     : ""
                     }>
                   <span className="tagline">GREAT HOUSE CHRISTIAN CENTRE</span>
-                  <h1>{``} <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Helping men find fulfilment in life through Christ", "  Reaching, Raising, equipping men in their walk with God and work for God" ]'><span className="wrap">{text}</span></span></h1>
+                  <h1> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Helping men find fulfilment in life through Christ", "  Reaching, Raising, equipping men in their walk with God and work for God" ]'><span className="wrap">{text}</span></span></h1>
                  <div className="about">
                  <HashLink to='#about'>
-                  <button className={activeLink === 'about' } onClick={() => onUpdateActiveLink('about')}>About Us</button>
+                  <button>About Us</button>
                   </HashLink>
                   <HashLink to='#connect'>
-                  <button className={activeLink === 'contact'} onClick={() => onUpdateActiveLink('contact')}>Contact Us</button>
+                  <button>Contact Us</button>
                  </HashLink>
                   </div>
                 </div>

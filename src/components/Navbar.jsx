@@ -3,10 +3,9 @@ import { Navbar, Nav, Container, Col, Button } from "react-bootstrap";
 import facebook from '../assets/img/facebook.svg';
 import x from '../assets/img/x.svg';
 import send from '../assets/img/send.png'
-import logo from '../assets/img/Ghcc logo.png';
+import logo from '../assets/img/Ghcclogo.png';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
-import { MDBBtn } from 'mdb-react-ui-kit';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -39,8 +38,10 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Col className="logoC">
-          <a href="" ><img src={logo} alt="" className="logo"/></a>
-          <a className="name " href="#">GREAT HOUSE CHRISTIAN CENTRE</a>
+            
+          <a href="#home" ><img src={logo} alt="" className="logo"/></a>
+          
+          <a className="name " href="#home">GREAT HOUSE CHRISTIAN CENTRE</a>
           </Col>
         
           
@@ -56,13 +57,13 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href=""><img src={facebook} alt="" /></a>
-                <a href=""><img src={x} alt="" /></a>
+                <a href="https://www.facebook.com/GHCCGLOBAL"><img src={facebook} alt="" /></a>
+                <a href="https://twitter.com/ghccofficial"><img src={x} alt="" /></a>
          
-                <a href=""><img src={navIcon3} alt="" /></a>
+                <a href="https://www.instagram.com/ghccglobal/"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-              <button >Contact &nbsp; <img className="send" src={send} alt="" /> </button>
+              <Button>Contact &nbsp; <img className="send" src={send} alt="" /> </Button>
               </HashLink>
             </span>
           </Navbar.Collapse>

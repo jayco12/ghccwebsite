@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header.jpg";
 // import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import { HashLink } from 'react-router-hash-link';
